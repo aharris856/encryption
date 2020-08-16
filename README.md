@@ -8,6 +8,16 @@ tiny.txt - 10 lines
 small.txt - 100 lines
 large.txt - 172822 lines
 super.txt - 1728220 lines
+Also if you use the gui to run it
+the way it does it is it encrypts the text
+from a given file say 'file.txt'
+and puts the encrypted text into a new
+file that you name, say 'encryptedFile.txt'
+same with decrypted said file you must input
+'encryptedFile.txt' and have it decrypt into a new file.
+NOTE: you cannot write into the same file you are encrypting with the gui
+and you also if you write into an existing file it WILL delete whatever
+contents were previously in it.
 IF YOU WANT TO BUILD YOUR OWN FILE TO RUN IT HERE IS A QUICK LITTLE STARTUP GUIDE FOR IT
 the encryptor class file takes in 3 variables while building an object:
 string to encrypt = value
