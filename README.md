@@ -43,7 +43,8 @@ public String getEncrypt()
 
 here are some examples of creating your own file to use the encryptor class:
 
-public class exampleClass{
+
+/*public class exampleClass{
   public static void main(String[]args)
   {
     Encryptor ex1 = new Encryptor("test 1",true,false); //take the text 'test 1' and encrypt in the less complex way
@@ -65,6 +66,6 @@ public class exampleClass{
     System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n);
     System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypted(),false,false)).getDecrypted() );
     }
-}//end exampleClass
+}//end exampleClass*/
 
 Anyway have fun and enjoy!
