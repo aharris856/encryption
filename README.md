@@ -44,28 +44,30 @@ public String getEncrypt()
 here are some examples of creating your own file to use the encryptor class:
 
 
-/*public class exampleClass{
-  public static void main(String[]args)
-  {
-    Encryptor ex1 = new Encryptor("test 1",true,false); //take the text 'test 1' and encrypt in the less complex way
-    Encryptor ex2 = new Encryptor("test 2",true,true); //take the text 'test 2' and encrypt it in the more complex way
-    Encryptor ex3 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,false); //take text that was already encrypted that you place inside and decrypt it
-    Encryptor ex4 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,true); //take complex encrypted text that you place inside and decrypt it
-    
-    //NOTE YOU CANNOT CALL THE COMPLEX DECRYPT ON A REGULAR ENCRYPTED TEXT NOR CALL REGULAR DECRYPT ON COMPLEX ENCRYPT
-    //THEY ARE 2 DIFFERENT RESULTS.
-    
-    //other valid calls
-    System.out.println(ex1.getEncrypt()+"\n\n"+ex2.getEncrypted());//output the encrypted ex1 and ex2
-    System.out.println(ex3.getDecrypted()+"\n\n"+ex4.getDecrypted());//output the decrypted ex3 and ex4
-    
-    //you can call without naming an object as well
-    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypted() );
-    
-    //you can also encrypt/decrypt named Encryptors by using their returned value
-    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n);
-    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypted(),false,false)).getDecrypted() );
-    }
-}//end exampleClass*/
+	public class exampleClass{
+
+		public static void main(String[]args)	
+
+		{  
+		   Encryptor ex1 = new Encryptor("test 1",true,false); //take the text 'test 1' and encrypt in the less complex way
+		   Encryptor ex2 = new Encryptor("test 2",true,true); //take the text 'test 2' and encrypt it in the more complex way
+		   Encryptor ex3 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,false); //take text that was already encrypted that you place inside and decrypt it
+		   Encryptor ex4 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,true); //take complex encrypted text that you place inside and decrypt it
+	
+		    //NOTE YOU CANNOT CALL THE COMPLEX DECRYPT ON A REGULAR ENCRYPTED TEXT NOR CALL REGULAR DECRYPT ON COMPLEX ENCRYPT
+		    //THEY ARE 2 DIFFERENT RESULTS.
+
+		    //other valid calls
+		    System.out.println(ex1.getEncrypt()+"\n\n"+ex2.getEncrypted());//output the encrypted ex1 and ex2
+		    System.out.println(ex3.getDecrypted()+"\n\n"+ex4.getDecrypted());//output the decrypted ex3 and ex4
+
+		    //you can call without naming an object as well
+		    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypted() );
+
+		    //you can also encrypt/decrypt named Encryptors by using their returned value
+		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n);
+		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypted(),false,false)).getDecrypted() );
+	    }
+	}//end exampleClass
 
 Anyway have fun and enjoy!
