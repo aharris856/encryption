@@ -1,4 +1,4 @@
-
+//GUI FILE RUNNING THE ENCRYPT CLASS
 import java.awt.EventQueue;
 
 import javax.swing.JFrame;
