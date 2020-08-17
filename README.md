@@ -64,7 +64,7 @@ here are some examples of creating your own file to use the encryptor class:
 		   Encryptor ex2 = new Encryptor("test 2",true,true); //take the text 'test 2' and encrypt it in the more complex way
 		   Encryptor ex3 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,false); //take text that was already encrypted that you place inside and decrypt it
 		   Encryptor ex4 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,true); //take complex encrypted text that you place inside and decrypt it
-	
+
 		    //NOTE YOU CANNOT CALL THE COMPLEX DECRYPT ON A REGULAR ENCRYPTED TEXT NOR CALL REGULAR DECRYPT ON COMPLEX ENCRYPT
 		    //THEY ARE 2 DIFFERENT RESULTS.
 
@@ -73,12 +73,12 @@ here are some examples of creating your own file to use the encryptor class:
 		    System.out.println(ex3.getDecrypt()+"\n\n"+ex4.getDecrypt());//output the decrypted ex3 and ex4
 
 		    //you can call without naming an object as well
-		    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypted() );
+		    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypt() );
 
 		    //you can also encrypt/decrypt named Encryptors by using their returned value
-		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypt()+"\n");
-		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypt(),false,false)).getDecrypt() );
-	    }
+		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEncrypt()+"\n");
+		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypt(),false,false)).getDecrypt() );  
+	     }
 	}//end exampleClass
 
 Anyway have fun and enjoy!
