@@ -24,9 +24,10 @@ string to encrypt = value
 boolean todo or 'to do' (aka what to do... sorry about my poor variable naming xD) 
 boolean level.
 (i.e. code below directly from the file.)
-public Encryptor(String value, boolean todo, boolean level)  
-		setup(value, todo, level);                                      
-}                                                                    
+	
+		public Encryptor(String value, boolean todo, boolean level)  
+				setup(value, todo, level);                                      
+		}                                                                    
 giving the input of todo = true will result in the file creating an encrypted version of 
 your input 'value' and false will decrypt value. this happens on creation of the object.
 boolean level is how or how deep you want the encryption to be. just regularly going through the
@@ -35,15 +36,15 @@ for the more complex one input true for and this creates a randomly generated se
 text. 
 other public class calls are: 
 
-public String getEncrypt()
-	{
-		if(key1 == 0)return null;
-		return valueOutput;
-	}
-	public String getDecrypt()
-	{
-		return valueOutput;
-	}
+	public String getEncrypt()
+		{
+			if(key1 == 0)return null;
+			return valueOutput;
+		}
+		public String getDecrypt()
+		{
+			return valueOutput;
+		}
   
  these simply return the 'value output' however it is worth noting this is just for ease of use on the calls
  if you call getDecrypt on a line that was entered to be encrypted itll just return the encrypted line not decrypted.
