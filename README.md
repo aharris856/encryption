@@ -76,7 +76,7 @@ here are some examples of creating your own file to use the encryptor class:
 		    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypted() );
 
 		    //you can also encrypt/decrypt named Encryptors by using their returned value
-		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n);
+		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n");
 		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypted(),false,false)).getDecrypted() );
 	    }
 	}//end exampleClass
