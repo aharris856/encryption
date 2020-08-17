@@ -25,7 +25,7 @@ boolean todo or 'to do' (aka what to do... sorry about my poor variable naming x
 boolean level.
 (i.e. code below directly from the file.)
 	
-		public Encryptor(String value, boolean todo, boolean level)  
+		public Encryptor(String value, boolean todo, boolean level){  
 				setup(value, todo, level);                                      
 		}                                                                    
 giving the input of todo = true will result in the file creating an encrypted version of 
@@ -36,7 +36,7 @@ for the more complex one input true for and this creates a randomly generated se
 text. 
 other public class calls are: 
 
-	public String getEncrypt()
+		public String getEncrypt()
 		{
 			if(key1 == 0)return null;
 			return valueOutput;
