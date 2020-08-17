@@ -52,8 +52,10 @@ public class runEncrypt {
 	public String decryptText(String input, boolean level) {
 		return (new Encryptor(input,false,level)).getDecrypt();
 	}
-	//file transfer encrypt/decrypt
-	public void fileXfer(String fileName, String newFileName, boolean todo, boolean level) throws Exception {
+	//file Fransfer Method encrypt/decrypt
+	public void fileXfer(String fileName, String newFileName, boolean todo, boolean level) throws Exception 
+	{
+		//VERIFY FILE NAMES
 		if(fileName.equalsIgnoreCase(newFileName)) {
 			progressLabel.setText("ERROR: your destination file cannot be the same as your initial file.");
 			return;
@@ -62,29 +64,36 @@ public class runEncrypt {
 			progressLabel.setText("ERROR... your destination file must end with .txt");
 			return;
 		}
-		//make sure file to read exists
 		File f = new File(fileName);
 		if(!f.exists()) {
 			progressLabel.setText("ERROR... file: "+fileName+" does not exist.");
 			return;
 		}
+		
+		//track progress in int prog to display
 		int prog = 0;
 		//if destination exists, remove it
 		f = new File(newFileName);
 		if(f.exists())f.delete();
+		
 		//File Readers and Writers
 		BufferedReader infile = new BufferedReader(new FileReader(fileName));
 		FileWriter fw = new FileWriter(newFileName,true);
 		BufferedWriter bw = new BufferedWriter(fw);
 		PrintWriter pw = new PrintWriter(bw);
 		ArrayList<String> fileContent = new ArrayList<String>();
+		//load the file to encrypt onto infile
 		while(infile.ready())
 			fileContent.add(infile.readLine());
 		infile.close();
+		
+		//begin encrypt/decrypt actions and track progress to display to user
 		int size = fileContent.size();
 		progressLabel.setText("0 / "+size);
 		int progTr = size/100;
 		int progTrH = size/100;
+		
+		
 		//to do = true => encrypt ... to do = false; => decrypt
 		if(todo) {//encrypt
 			for(int i = 0; i < size; i++)
@@ -128,6 +137,8 @@ public class runEncrypt {
 			fw.close();
 		}
 	}
+	
+	
 	//check if input ends with end.
 	static boolean endsWith(String input, String end)throws Exception
 	{
