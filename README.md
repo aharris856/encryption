@@ -62,8 +62,8 @@ here are some examples of creating your own file to use the encryptor class:
 		{  
 		   Encryptor ex1 = new Encryptor("test 1",true,false); //take the text 'test 1' and encrypt in the less complex way
 		   Encryptor ex2 = new Encryptor("test 2",true,true); //take the text 'test 2' and encrypt it in the more complex way
-		   Encryptor ex3 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,false); //take text that was already encrypted that you place inside and decrypt it
-		   Encryptor ex4 = new Encryptor(TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,true); //take complex encrypted text that you place inside and decrypt it
+		   Encryptor ex3 = new Encryptor(INSERT_YOUR_OWN_TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,false); //take text that was already encrypted that you place inside and decrypt it
+		   Encryptor ex4 = new Encryptor(INSTERT_YOUR_OWN_TEXT_THAT_WAS_ALREADY_ENCRYPTED,false,true); //take complex encrypted text that you place inside and decrypt it
 
 		    //NOTE YOU CANNOT CALL THE COMPLEX DECRYPT ON A REGULAR ENCRYPTED TEXT NOR CALL REGULAR DECRYPT ON COMPLEX ENCRYPT
 		    //THEY ARE 2 DIFFERENT RESULTS.
