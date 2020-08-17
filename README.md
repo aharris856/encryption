@@ -69,15 +69,15 @@ here are some examples of creating your own file to use the encryptor class:
 		    //THEY ARE 2 DIFFERENT RESULTS.
 
 		    //other valid calls
-		    System.out.println(ex1.getEncrypt()+"\n\n"+ex2.getEncrypted());//output the encrypted ex1 and ex2
-		    System.out.println(ex3.getDecrypted()+"\n\n"+ex4.getDecrypted());//output the decrypted ex3 and ex4
+		    System.out.println(ex1.getEncrypt()+"\n\n"+ex2.getEncrypt());//output the encrypted ex1 and ex2
+		    System.out.println(ex3.getDecrypt()+"\n\n"+ex4.getDecrypt());//output the decrypted ex3 and ex4
 
 		    //you can call without naming an object as well
 		    System.out.println( (new Encryptor("this is a test",true,false)).getEncrypted() );
 
 		    //you can also encrypt/decrypt named Encryptors by using their returned value
-		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypted()+"\n");
-		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypted(),false,false)).getDecrypted() );
+		    System.out.println( "Encrypted ex 1 =\n"+ex1.getEnrypt()+"\n");
+		    System.out.println( "Decrypted ex 1 after Encrypted = \n"+ (new Encryptor(ex1.getEncrypt(),false,false)).getDecrypt() );
 	    }
 	}//end exampleClass
 
