@@ -1,4 +1,9 @@
 # encryption
+	PLEASE NOTE This Encryption project in my opinion is not as good
+	as my newer one. I am leaving this one up but for a cleaner written 
+	and much more interesting algorithm thats more optimized please see my 
+	BETTER - Encryptor Project/repository
+
 fun encryption program i made. You can use the encryptor class file and run it from something you write if you want,
 the run Encrypt is just a GUI file that uses the Encryptor file. If you run the runEncrypt it should create a gui
 that lets you chooes to enctrypt text, encrypt a file, or do an even harder encrypt on a file! i just made it for
